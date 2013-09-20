@@ -32,6 +32,25 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development, :test do
+  gem 'rspec-rails', '2.11.0'
+  gem 'guard-rspec', '1.2.1'
+  gem 'guard-spork', '1.2.0'
+  gem 'spork-rails', :github => 'sporkrb/spork-rails'
+  gem 'better_errors'
+  gem 'factory_girl_rails'
+  gem 'childprocess', '0.3.6'
+end
+
+group :test do
+  gem 'shoulda-matchers'
+  gem 'capybara', '1.1.2'
+  gem 'database_cleaner'
+end
+
+gem 'jquery-rails'
+gem 'bcrypt-ruby', '~> 3.0.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
