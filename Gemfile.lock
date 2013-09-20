@@ -99,6 +99,7 @@ GEM
     multi_json (1.8.0)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
+    pg (0.17.0)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -163,8 +164,11 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+<<<<<<< HEAD
     sqlite3 (1.3.8)
     sys-proctable (0.9.3)
+=======
+>>>>>>> master
     thor (0.18.1)
     thread_safe (0.1.3)
       atomic
@@ -197,12 +201,16 @@ DEPENDENCIES
   guard-spork (= 1.2.0)
   jbuilder (~> 1.2)
   jquery-rails
+  pg
   rails (= 4.0.0)
   rspec-rails (= 2.11.0)
   sass-rails (~> 4.0.0)
   sdoc
+<<<<<<< HEAD
   shoulda-matchers
   spork-rails!
   sqlite3
+=======
+>>>>>>> master
   turbolinks
   uglifier (>= 1.3.0)
