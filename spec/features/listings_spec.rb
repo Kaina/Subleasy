@@ -1,4 +1,4 @@
-require 'spec_helper'
+ require 'spec_helper'
 
 describe 'Listing creation' do
   context 'can create a listing if logged in' do
@@ -6,3 +6,4 @@ describe 'Listing creation' do
     end
   end
 end
+ 
