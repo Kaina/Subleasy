@@ -1,4 +1,7 @@
 Subleasy::Application.routes.draw do
+  devise_for :admins
+  devise_for :lessees
+  devise_for :lessors
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
