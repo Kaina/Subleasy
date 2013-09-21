@@ -11,11 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20130921203202) do
+=======
+ActiveRecord::Schema.define(version: 20130921193640) do
+>>>>>>> listing model test suite complete
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+<<<<<<< HEAD
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -27,10 +32,29 @@ ActiveRecord::Schema.define(version: 20130921203202) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+=======
+  create_table "listings", force: true do |t|
+    t.date     "start_date"
+    t.date     "end_date"
+    t.string   "address"
+    t.string   "address2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "apartment_type"
+    t.integer  "price_low"
+    t.integer  "price_high"
+    t.text     "description"
+    t.integer  "bedrooms"
+    t.integer  "bathrooms"
+    t.integer  "square_footage"
+    t.integer  "user_id"
+>>>>>>> listing model test suite complete
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
   add_index "admins", ["email"], name: "index_admins_on_email", unique: true, using: :btree
   add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
 
@@ -70,4 +94,6 @@ ActiveRecord::Schema.define(version: 20130921203202) do
   add_index "lessors", ["email"], name: "index_lessors_on_email", unique: true, using: :btree
   add_index "lessors", ["reset_password_token"], name: "index_lessors_on_reset_password_token", unique: true, using: :btree
 
+=======
+>>>>>>> listing model test suite complete
 end
