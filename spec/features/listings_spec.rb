@@ -7,11 +7,15 @@ describe 'Listing creation' do
       visit "/listings/new"
      
       expect {
-        fill_in 'listing_start_date', with: Date.parse('2013-10-31')
-        fill_in 'listing_end_date', with: Date.parse('2013-11-30')
+        select 'October', :from => 'listing_start_date_2i'
+        select '31', :from => 'listing_start_date_3i'
+        select '2013', :from => 'listing_start_date_1i'
+        select 'November', :from => 'listing_end_date_2i'
+        select '21', :from => 'listing_end_date_3i'
+        select '2013', :from => 'listing_end_date_1i'
         fill_in 'listing_address', with: '2216 W Palmer Street'
         fill_in 'listing_city', with: 'Chicago'
-        fill_in 'listing-state', with: 'IL'
+        fill_in 'listing_state', with: 'IL'
         fill_in 'listing_zip', with: '60604'
         fill_in 'listing_apartment_type', with: 'Studio'
         fill_in 'listing_price_low', with: "$2000.00"
